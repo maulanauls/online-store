@@ -9,7 +9,7 @@ import { AES } from "crypto-js";
 import { Context } from "../state/store";
 import { def } from "../config/const";
 import ObjectValidator from "../helper/objectValidator";
-import { Button, SHAPE, KIND as ButtonKind } from "baseui/button";
+import { Button, SHAPE } from "baseui/button";
 import {
   AiOutlineMail,
   AiOutlineKey,

@@ -2,7 +2,7 @@ const initialState = {
   theme: "light",
 };
 
-export default (state = initialState, action) => {
+const theme = (state = initialState, action) => {
   switch (action.type) {
     case "SET_THEME":
       return {
@@ -19,3 +19,5 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+
+export default theme

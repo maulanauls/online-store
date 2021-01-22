@@ -9,16 +9,11 @@ const Restore = ({ children }) => {
   useEffect(() => {
     let process = async () => {
       try {
-        /* populate */
-
-        // theme
         const themeBefore = await storage.get("theme");
         const payloadTheme = {
           ...theme,
           theme: themeBefore ? themeBefore : "light",
         };
-
-        /* set to context */
         dispatch({ type: "RESTORE:THEME", payload: payloadTheme });
       } catch (error) {
         console.log(error);
@@ -26,7 +21,7 @@ const Restore = ({ children }) => {
       }
     };
     process();
-  }, []);
+  }, [theme, dispatch]);
 
   return children;
 };

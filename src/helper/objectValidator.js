@@ -1,12 +1,13 @@
 export default function ObjectValidator(schema) {
   let errors = {};
-
-  Object.keys(schema).map((key) => {
-    Object.keys(schema[key]).map((rule) => {
-      let resRule = schema[key][rule]();
-      if (!!resRule) errors[key] = resRule;
+  if (Object.keys(schema).length > 0) {
+    Object.keys(schema).forEach((key) => {
+      Object.keys(schema[key]).forEach((rule) => {
+        let resRule = schema[key][rule]();
+        if (!!resRule) errors[key] = resRule;
+      });
     });
-  });
+  }
 
   return Object.keys(errors).length === 0 ? false : errors;
 }

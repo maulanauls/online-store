@@ -2,7 +2,7 @@ const initialState = {
   authToken: "",
 };
 
-export default (state = initialState, action) => {
+const setting = (state = initialState, action) => {
   switch (action.type) {
     case "SET_LOGIN":
       return {
@@ -17,3 +17,5 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+
+export default setting;

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Block } from "baseui/block";
 import { withRouter } from "react-router";
 
@@ -15,6 +15,7 @@ const PageIndex = (props) => {
         <Block className="row justify-content-center">
           <Block className="col-md-6">
             <input
+              value={key}
               className="ex__searchbox__item"
               onChange={(e) => setQuery(e.target.value)}
             ></input>
