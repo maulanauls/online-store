@@ -1,6 +1,6 @@
-# getting started online store
+# Getting started online store
 This project example for online store using by REACTJS with REST API for fetch the data
-## available running scripts
+## Available running scripts
 Before running this project please install the depency of node modules. entries the root of project directory "cd /project-dir" (cd online-store)
 
 ### `npm install`
