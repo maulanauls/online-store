@@ -21,7 +21,7 @@ const Restore = ({ children }) => {
       }
     };
     process();
-  }, [theme, dispatch]);
+  }, []);
 
   return children;
 };
