@@ -1,0 +1,361 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../media/fonts/EuclidCircularA-Bold.eot");
+  src: local("Euclid Circular A Bold"), local("EuclidCircularA-Bold"),
+    url("../media/fonts/EuclidCircularA-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../media/fonts/EuclidCircularA-Bold.woff2") format("woff2"),
+    url("../media/fonts/EuclidCircularA-Bold.woff") format("woff"),
+    url("../media/fonts/EuclidCircularA-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../media/fonts/EuclidCircularA-Light.eot");
+  src: local("Euclid Circular A Light"), local("EuclidCircularA-Light"),
+    url("../media/fonts/EuclidCircularA-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../media/fonts/EuclidCircularA-Light.woff2") format("woff2"),
+    url("../media/fonts/EuclidCircularA-Light.woff") format("woff"),
+    url("../media/fonts/EuclidCircularA-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../media/fonts/EuclidCircularA-BoldItalic.eot");
+  src: local("Euclid Circular A Bold Italic"),
+    local("EuclidCircularA-BoldItalic"),
+    url("../media/fonts/EuclidCircularA-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../media/fonts/EuclidCircularA-BoldItalic.woff2") format("woff2"),
+    url("../media/fonts/EuclidCircularA-BoldItalic.woff") format("woff"),
+    url("../media/fonts/EuclidCircularA-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../media/fonts/EuclidCircularA-LightItalic.eot");
+  src: local("Euclid Circular A Light Italic"),
+    local("EuclidCircularA-LightItalic"),
+    url("../media/fonts/EuclidCircularA-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../media/fonts/EuclidCircularA-LightItalic.woff2") format("woff2"),
+    url("../media/fonts/EuclidCircularA-LightItalic.woff") format("woff"),
+    url("../media/fonts/EuclidCircularA-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../media/fonts/EuclidCircularA-Regular.eot");
+  src: local("Euclid Circular A Regular"), local("EuclidCircularA-Regular"),
+    url("../media/fonts/EuclidCircularA-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../media/fonts/EuclidCircularA-Regular.woff2") format("woff2"),
+    url("../media/fonts/EuclidCircularA-Regular.woff") format("woff"),
+    url("../media/fonts/EuclidCircularA-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../media/fonts/EuclidCircularA-SemiBold.eot");
+  src: local("Euclid Circular A SemiBold"), local("EuclidCircularA-SemiBold"),
+    url("../media/fonts/EuclidCircularA-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../media/fonts/EuclidCircularA-SemiBold.woff2") format("woff2"),
+    url("../media/fonts/EuclidCircularA-SemiBold.woff") format("woff"),
+    url("../media/fonts/EuclidCircularA-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../media/fonts/EuclidCircularA-Medium.eot");
+  src: local("Euclid Circular A Medium"), local("EuclidCircularA-Medium"),
+    url("../media/fonts/EuclidCircularA-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../media/fonts/EuclidCircularA-Medium.woff2") format("woff2"),
+    url("../media/fonts/EuclidCircularA-Medium.woff") format("woff"),
+    url("../media/fonts/EuclidCircularA-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../media/fonts/EuclidCircularA-Italic.eot");
+  src: local("Euclid Circular A Italic"), local("EuclidCircularA-Italic"),
+    url("../media/fonts/EuclidCircularA-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../media/fonts/EuclidCircularA-Italic.woff2") format("woff2"),
+    url("../media/fonts/EuclidCircularA-Italic.woff") format("woff"),
+    url("../media/fonts/EuclidCircularA-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../media/fonts/EuclidCircularA-SemiBoldItalic.eot");
+  src: local("Euclid Circular A SemiBold Italic"),
+    local("EuclidCircularA-SemiBoldItalic"),
+    url("../media/fonts/EuclidCircularA-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../media/fonts/EuclidCircularA-SemiBoldItalic.woff2") format("woff2"),
+    url("../media/fonts/EuclidCircularA-SemiBoldItalic.woff") format("woff"),
+    url("../media/fonts/EuclidCircularA-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../media/fonts/EuclidCircularA-MediumItalic.eot");
+  src: local("Euclid Circular A Medium Italic"),
+    local("EuclidCircularA-MediumItalic"),
+    url("../media/fonts/EuclidCircularA-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../media/fonts/EuclidCircularA-MediumItalic.woff2") format("woff2"),
+    url("../media/fonts/EuclidCircularA-MediumItalic.woff") format("woff"),
+    url("../media/fonts/EuclidCircularA-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.darktheme {
+  background: #202020;
+}
+
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.btn-light {
+    color: #000;
+    background: transparent !important;
+}
+
+.btn-dark {
+    color: #fff !important;
+    background: transparent !important;
+}
+
+*:focus {
+  outline: none;
+}
+
+.w-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+  display: flex;
+}
+
+.w-container:before,
+.w-container:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ex__backto {
+  font-size: 21px !important;
+}
+
+.ex__container {
+  position: relative;
+  padding-top: 90px;
+
+  .ex__background__wrapper {
+    -webkit-animation: fadein 1s;
+    animation: fadein 1s;
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    grid-template-areas:
+      "topleft topcenter topright"
+      "middleleft middlecenter middleright"
+      "bottomleft bottomcenter bottomright";
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(3, 33.33%);
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    width: 80%;
+    z-index: -1;
+  }
+
+  .ex__background__wrapper > div {
+    transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+  }
+
+  .ex__shape__background {
+    border: solid #f86734 10px;
+    border-radius: 500px;
+    height: 173px;
+    position: relative;
+    transform-origin: 0 0;
+    width: 330px;
+  }
+
+  .ex__shape__background {
+    border-color: #f86734;
+    height: calc(100vw - 1px);
+    width: calc(400px + 100vw);
+  }
+
+  .ex__shape__background.dark {
+    border-color: gray;  
+  }
+
+  .ex__shape {
+    grid-area: topright;
+    height: 373px;
+    justify-self: end;
+    border-width: 20px;
+  }
+
+  .ex__wrapper {
+    width: 480px;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 4px 41px 47px 0 rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .ex__wrapper.dark {
+    background: #202020;
+    h4 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+
+  .ex__wrapper.hide {
+    z-index: -1;
+    position: absolute;
+    left: 550px;
+  }
+
+  .ex__wrapper__register {
+    display: none;
+    width: 480px;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    box-shadow: 4px 41px 47px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .ex__wrapper__register.active {
+    display: block;
+    margin-right: 50px;
+  }
+  .ex__wrapper__register.active.dark {
+    background: #202020;
+    h4 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+
+  .ex__title {
+    padding: 20px;
+    h4 {
+      letter-spacing: 1px;
+      text-align: right;
+      font-family: "Euclid Circular A", sans-serif;
+      font-weight: 700;
+      color: #000;
+      font-size: 51px;
+    }
+  }
+
+  .form-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+
+    label {
+      font-family: "Euclid Circular A", sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 15px;
+      line-height: 1;
+      color: gray;
+      margin-bottom: 11px;
+    }
+  }
+  .form-btn {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .form-footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    p {
+      text-align: center;
+      font-size: 16px;
+      font-family: "Euclid Circular A", sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  }
+  .error__helper {
+    font-size: 14px;
+    font-family: "Euclid Circular A", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: red;
+    line-height: 2;
+  }
+}

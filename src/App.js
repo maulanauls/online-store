@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, useEffect } from "react";
+import { ThemeProvider } from "baseui";
+import Index from "./router";
+import { Block } from "baseui/block";
+import { createTheme, createDarkTheme } from "baseui";
 
-function App() {
+import { Context } from "./state/store";
+
+const THEME = {
+  light: "light",
+  dark: "dark",
+};
+export default function App() {
+  const [state] = useContext(Context);
+
+  const [theme, setTheme] = React.useState(THEME.light);
+  const primitives = {
+    primaryFontFamily: "Euclid Circular A",
+  };
+
+  useEffect(() => {
+    if(state.theme.theme === "light") {
+        document.getElementById("body").className = "lighttheme";
+    } else {
+        document.getElementById("body").className = "darktheme";
+    }
+    setTheme(state.theme.theme)
+  }, [state]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider
+      theme={
+        theme === "light"
+          ? createTheme(primitives)
+          : createDarkTheme(primitives)
+      }
+    >
+      <Block backgroundColor={theme === "light" ? ["#fff"] : ["#141414"]}>
+        <Index />
+      </Block>
+    </ThemeProvider>
   );
 }
-
-export default App;
